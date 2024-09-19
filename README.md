@@ -1,6 +1,6 @@
 # MCS-51 Dev Template
 
-The Intel MCS-51 (8051) (51 单片机) 开发模板
+The Intel MCS-51 (8051) (51 单片机) Develop Template
 
 ## Platform
 

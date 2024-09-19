@@ -1,7 +1,11 @@
-.PHONY : all clean
+.PHONY : all flash clean
+
+PROTOCAL = auto
 
 CC = sdcc
 CC_FLAGS = -mmcs51
+STCGAL = stcgal
+STCGAL_FLAGS = -P $(PROTOCAL)
 
 SRC_DIR = src
 BUILD_DIR = build
@@ -19,6 +23,9 @@ $(TARGET).ihx: $(OBJS)
 $(BUILD_DIR)/%.rel: $(SRC_DIR)/%.c
 	@mkdir -p $(dir $@)
 	$(CC) -c $< -o $@
+
+flash:
+	$(STCGAL) $(STCGAL_FLAGS) $(TARGET).ihx
 
 clean:
 	rm -rf $(BUILD_DIR)

@@ -7,7 +7,7 @@ SRC_DIR = src
 BUILD_DIR = build
 TARGET = $(BUILD_DIR)/output
 
-SRCS = $(wildcard $(SRC_DIR)/*.c)
+SRCS = $(shell find $(SRC_DIR) -name '*.c')
 OBJS = $(SRCS:$(SRC_DIR)/%.c=$(BUILD_DIR)/%.rel)
 
 all: $(TARGET).ihx
@@ -17,7 +17,7 @@ $(TARGET).ihx: $(OBJS)
 	$(CC) $(OBJS) -o $(TARGET).ihx
 
 $(BUILD_DIR)/%.rel: $(SRC_DIR)/%.c
-	@mkdir -p $(BUILD_DIR)
+	@mkdir -p $(dir $@)
 	$(CC) -c $< -o $@
 
 clean:

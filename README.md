@@ -10,6 +10,10 @@ The Intel MCS-51 (8051) (51 单片机) 开发模板
 
 1. Install [sdcc](https://sdcc.sourceforge.net).
 
+```bash
+sudo apt install sdcc
+```
+
 > For ArchLinux user, you can  
 > - Add `archlinuxcn` pakage source.
 >

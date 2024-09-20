@@ -1,6 +1,6 @@
 {
     "files.associations": {
         ".fantomasignore": "ignore",
-        "8051.h": "c",
+        "8052.h": "c",
     }
 }

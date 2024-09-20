@@ -1,12 +1,14 @@
 {
     "configurations": [
         {
-            "name": "SDCC",
+            "name": "MCS51",
             "intelliSenseMode": "linux-gcc-x64",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/share/sdcc/include",
+                "/usr/share/sdcc/include/mcs51"
             ],
-            // change the compilerPath to your SDCC compiler
+            "defines": [],
             "compilerPath": "/usr/bin/sdcc",
             "cStandard": "c17",
             "cppStandard": "c++17"

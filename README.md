@@ -6,9 +6,9 @@ The Intel MCS-51 (8051) (51 单片机) Develop Template
 
 **Linux**: Tested on ArchLinux
 
-## Usage
+## Prepare
 
-1. Install [`sdcc`](https://sdcc.sourceforge.net) and `stcgal`.
+1. Install [`sdcc`](https://sdcc.sourceforge.net).
 
 ```bash
 sudo apt install sdcc
@@ -23,28 +23,38 @@ sudo apt install sdcc
 > sudo pacman -S sdcc
 > ```
 
+2. Install `stcgal`.
+
 ```bash
 pip install stcgal
 ```
 
-2. Build.
+## Usage
+
+### Build
 
 ```bash
 make all
 # or simply run `make`
 ```
 
-3. Flash
+### Flash
 
 ```bash
 make flash
 ```
 
-4. Clean build outputs
+### Clean
 
 ```bash
 make clean
 ```
+
+## Syntax Checher
+
+### VSCode
+
+Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> after save.
 
 ## License
 

@@ -1,2 +1,13 @@
+# generated
+*.hex
+*.lst
+*.rel
+*.rst
+*.sym
+*.ihx
+*.lk
+*.map
+*.mem
+
 # build files
 build/

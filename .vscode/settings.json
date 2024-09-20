@@ -1,4 +1,5 @@
 {
+    "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         ".fantomasignore": "ignore",
         "8052.h": "c",

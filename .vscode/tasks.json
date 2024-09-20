@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SDCC Build",
+      "type": "shell",
+      "command": "make all",
+      "problemMatcher": {
+        "owner": "custom",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^([^:]+):(\\d+):\\s*error\\s*(\\d+):\\s*(.*)$",
+          "file": 1,
+          "line": 2,
+          "severity": "error",
+          "code": 3,
+          "message": 4
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "showReuseMessage": false
+      },
+      "runOptions": {
+        "runOn": "default"
+      }
+    }
+  ]
+}

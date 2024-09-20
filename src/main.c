@@ -1,5 +1,6 @@
 #include <8052.h>
 
-int main() {
+int main()
+{
     return 0;
 }

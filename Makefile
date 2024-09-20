@@ -25,7 +25,7 @@ $(BUILD_DIR)/%.rel: $(SRC_DIR)/%.c
 	$(CC) -c $< -o $@
 
 flash:
-	$(STCGAL) $(STCGAL_FLAGS) $(TARGET).ihx
+	sudo $(STCGAL) $(STCGAL_FLAGS) $(TARGET).ihx
 
 clean:
 	rm -rf $(BUILD_DIR)
